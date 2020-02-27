@@ -229,6 +229,18 @@ body {
     align-items: center;
 }
 
+.header__item span::before {
+    content: "";
+    background-color: #54D38A;
+    border: 1px solid #54D38A;
+    height: 6px;
+    width: 6px;
+    margin-right: 6px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .header__item h4 {
     font-size: 1.1rem;
     font-family: poppins, sans-serif;
