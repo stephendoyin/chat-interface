@@ -1,0 +1,747 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <title>ChatBot</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="row header__inner">
+            <div class="header__item">
+                <img src="img/drake.jpg" alt="" class="avatar">
+                <div>
+                    <h4>Drake</h4>
+                    <span>Active</span>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <section>
+
+        <main class="chat-box">
+            <div class="row">
+
+                <div class="chat-box__wrapper left">
+                    <div class="chat-box__inner-wrapper">
+                        <img src="img/drake.jpg" alt="" class="avatar">
+                        <div class="chat-box__text-wrapper">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                            <div class="button-container">
+                                <button id="myBtn" class="btn btn button--no-width">
+                                    GENERATE
+                                </button>
+                                <button class="btn btn button--no-width">
+                                    cancel
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <small>
+                            <img src="img/clock.png" alt="">
+                            11:01 AM | Yesterday
+                        </small>
+                    </div>
+                </div>
+
+                <div class="chat-box__wrapper right">
+                    <div class="chat-box__inner-wrapper">
+                        <img src="img/face.jpg" alt="" class="avatar">
+                        <div class="chat-box__text-wrapper">
+                            Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </div>
+
+                        <small>
+                            <img src="img/clock.png" alt="">
+                            11:01 AM | Yesterday
+                        </small>
+                    </div>
+                </div>
+
+                <div class="chat-box__wrapper left">
+                    <div class="chat-box__inner-wrapper">
+                        <img src="img/drake.jpg" alt="" class="avatar">
+                        <div class="chat-box__text-wrapper">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                            <div class="button-container">
+                                <button disabled class="btn button--no-width">
+                                    confirm
+                                </button>
+                                <button disabled class="btn button--no-width">
+                                    cancel
+                                </button>
+                            </div>
+                        </div>
+
+                        <small>
+                            <img src="img/clock.png" alt="">
+                            11:01 AM | Yesterday
+                        </small>
+                    </div>
+                </div>
+
+                <div class="chat-box__wrapper right">
+                    <div class="chat-box__inner-wrapper">
+                        <img src="img/face.jpg" alt="" class="avatar">
+                        <div class="chat-box__text-wrapper">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                        </div>
+
+                        <small>
+                            <img src="img/clock.png" alt="">
+                            11:01 AM | Yesterday
+                        </small>
+                    </div>
+                </div>
+
+        </main>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <form class="row form">
+            <input class="input" type="text" placeholder='Enter your message here'>
+            <button class="btn" type="submit">
+                <img src="img/send.svg" alt="">
+            </button>
+        </form>
+
+        <div class="footer__header">
+            <img src="img/logo.png" class="footer__logo" alt="">
+            <small>Tech by CreditClan</small>
+        </div>
+    </footer>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="">Terms and Condition</h4>
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-body js-handle">
+                <p class="">
+                    You will be required to provide a few information about yourself. Please ensure you have good internet before you begin.
+                </p>
+
+                <form action="">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="example">
+                        <label><a href="" class="link">I accept the terms and condition</a></label>
+                    </div>
+
+                    <br><br>
+
+                    <button class="btn button--no-width" type="submit">
+                        Submit
+                    </button>
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <div class="field fluid">
+                        <input type="text" maxlength="11" placeholder="BVN">
+                        <div class="ui pointing red basic label">
+                            Please enter a value
+                        </div>
+                    </div>
+
+                    <div class="field fluid">
+                        <input onfocus="this.type='date'" onblur="this.type='text'" type="text" maxlength="11" placeholder="Date of Birth">
+                        <div class="ui pointing red basic label">
+                            Please enter a value
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn button--no-width" type="submit">
+                        Submit
+                    </button>
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <div>
+                        <h4>BIO</h4>
+                        <div class="field fluid">
+                            <input type="text" maxlength="11" placeholder="Mobile Number" onfocus="this.type='number'" onblur="this.type='text'">
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="state-of-origin">
+                                <div class="default text">State of Origin</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="abia">Abia</div>
+                                    <div class="item" data-value="anambra">Anambra</div>
+                                </div>
+                            </div>
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+
+                        <div class="two fields">
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="gender">
+                                    <div class="default text">Gender</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="male">Male</div>
+                                        <div class="item" data-value="female">Female</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="gender">
+                                    <div class="default text">Marital Status</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="single">Single</div>
+                                        <div class="item" data-value="married">Married</div>
+                                        <div class="item" data-value="married">Seperated</div>
+                                        <div class="item" data-value="married">Divorced</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="state-of-origin">
+                                <div class="default text">Descendants</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="abia">1</div>
+                                    <div class="item" data-value="anambra">2</div>
+                                </div>
+                            </div>
+                            <div class="ui pointing red basic label">
+                                Please select a value
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <br>
+                        <h4>Next of KIN</h4>
+
+                        <div class="field fluid">
+                            <input type="text" placeholder="Name">
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+                        <div class="two fields">
+
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="state-of-origin">
+                                    <div class="default text">Relationship</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="father">Father</div>
+                                        <div class="item" data-value="mother">Mother</div>
+                                        <div class="item" data-value="sibling">Sibling</div>
+                                        <div class="item" data-value="spouse">Spouse</div>
+                                        <div class="item" data-value="child">Child</div>
+                                        <div class="item" data-value="other">Others</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="state-of-origin">
+                                    <div class="default text">State of Origin</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="Abia">Abia</div>
+                                        <div class="item" data-value="Anambra">Anambra</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="two fields">
+
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="gender">
+                                    <div class="default text">Gender</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="male">Male</div>
+                                        <div class="item" data-value="female">Female</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="state-of-origin">
+                                    <div class="default text">Descendants</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="1">1</div>
+                                        <div class="item" data-value="2">2</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <button class="btn button--no-width" type="submit">
+                        Submit
+                    </button>
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <div>
+                        <div class="center">
+                            <label for="image-file" class="label-image">
+                                <img src="img/cloud-computing.svg" alt="">
+                                <p class="center">
+                                    Upload an Image
+                                </p>
+                            </label>
+                            <input id="image-file" type="file" accept="image/png, image/jpeg">
+
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+                    <div class="button__container">
+                        <button class="btn button--no-width prev" type="submit">
+                            Prev
+                        </button>
+                        <button class="btn button--no-width" type="submit">
+                            Submit
+                        </button>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <div>
+                        <div class="center">
+                            <label for="upload-file" class="label-file">
+                                <img src="img/pdf.svg" alt="">
+                                <p class="center">
+                                    Upload a Statement
+                                </p>
+                            </label>
+                            <input id="upload-file" type="file" accept="application/pdf">
+                            <div class="ui center__ad form">
+
+                                <div class="inline fields">
+                                    <label>Passworded?</label>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="frequency" checked="checked">
+                                            <label>Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="frequency">
+                                            <label>No</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+                    <div class="button__container">
+                        <button class="btn button--no-width prev" type="submit">
+                            Prev
+                        </button>
+                        <button class="btn button--no-width" type="submit">
+                            Submit
+                        </button>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+
+                    <div>
+                        <h4>WORK INFORMATION</h4>
+
+
+                        <div class="two fields">
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="gender">
+                                    <div class="default text">Occupation</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="a">A</div>
+                                        <div class="item" data-value="b">B</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui dropdown selection">
+                                    <input type="hidden" name="gender">
+                                    <div class="default text">Sector</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="a">a</div>
+                                        <div class="item" data-value="b">b</div>
+                                        <div class="item" data-value="c">c</div>
+                                        <div class="item" data-value="d">d</div>
+                                    </div>
+                                </div>
+                                <div class="ui pointing red basic label">
+                                    Please select a value
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="field fluid">
+                            <input type="text" placeholder="Compay Name">
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea rows="3" placeholder="Company Address"></textarea>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="ui divider"></div>
+                    <div>
+
+                        <h4>INCOME INFORMATION</h4>
+                        <div class="two fields">
+                            <div class="field fluid">
+                                <input type="text" placeholder="Net Income" onblur="this.type='text'" onfocus="this.type='number'">
+                                <div class="ui pointing red basic label">
+                                    Please enter a value
+                                </div>
+                            </div>
+                            <div class="field fluid">
+                                <input type="text" placeholder="Monthly Spending" onblur="this.type='text'" onfocus="this.type='number'">
+                                <div class="ui pointing red basic label">
+                                    Please enter a value
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="button__container">
+                            <button class="btn button--no-width prev" type="submit">
+                                Prev
+                            </button>
+                            <button class="btn button--no-width" type="submit">
+                                Submit
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <div class="counter">
+                        <p>
+                            00 min : 34 secs
+                        </p>
+                    </div>
+
+                    <h4 class="ui">
+                        Have you ever collected loan from <strong><em>ONE FINANCE AND INVESTMENTS LIMITED</em></strong>&nbsp;?
+                    </h4>
+
+                    <div>
+                        <div class="ui selection list">
+                            <a class="item">
+                                <div class="ui green horizontal label">A</div>
+                                <span>Yes</span>
+                            </a>
+                            <a class="item">
+                                <div class="ui green horizontal label">B</div>
+                                No
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="space top-space">
+                        <br>
+                        <div id="progress" data-value="6" data-total="20" class="ui indicating progress">
+                            <div class="bar"></div>
+                            <!-- <div class="label">6 of 10</div> -->
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+                <form action="" class="ui fluid form">
+
+                    <img src="img/exam.svg" class="exam" alt="">
+
+                    <h4 class="ui">
+                        In 120 seconds try to answer as many questions as possible <em>
+                            <strong>Truthfully</strong>
+                        </em>
+                    </h4>
+
+
+                    <div class="center">
+                        <button class="btn button--no-width bt">Begin Test</button>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+            <div class="modal-body js-handle">
+
+
+                <form action="" class="ui fluid form">
+
+                    <div class="field fluid">
+                        <textarea placeholder="Address" id="" rows="3"></textarea>
+                        <div class="ui pointing red basic label">
+                            Please enter a value
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="state-of-origin">
+                                <div class="default text">State of Origin</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="abia">Abia</div>
+                                    <div class="item" data-value="anambra">Anambra</div>
+                                </div>
+                            </div>
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="status-of-residence">
+                                <div class="default text">Status of residence</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="abia">Owned</div>
+                                    <div class="item" data-value="anambra">Rented</div>
+                                </div>
+                            </div>
+                            <div class="ui pointing red basic label">
+                                Please enter a value
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <div class="ui dropdown selection">
+                            <input type="hidden" name="lga">
+                            <div class="default text">LGA</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="abia">Abia</div>
+                                <div class="item" data-value="anambra">Anambra</div>
+                            </div>
+                        </div>
+                        <div class="ui pointing red basic label">
+                            Please enter a value
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="ui dropdown selection">
+                            <input type="hidden" name="status-of-residence">
+                            <div class="default text">Number of years in residence</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="1">1</div>
+                                <div class="item" data-value="2">2</div>
+                                <div class="item" data-value="3">3</div>
+                            </div>
+                        </div>
+                        <div class="ui pointing red basic label">
+                            Please enter a value
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <button class="btn button--no-width" type="submit">
+                        Submit
+                    </button>
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/semantic.min.js"></script>
+
+
+    <script>
+        let modalBody = document.querySelectorAll('.js-handle');
+
+        window.addEventListener('load', (e) => {
+            modalBody[0].style.display = 'block';
+        })
+
+        modalBody.forEach((item, i) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                modalBody.forEach(el => {
+                    el.style.display = "none";
+                });
+                modalBody[i++].style.display = "block";
+            })
+        })
+
+        $('.ui.dropdown').dropdown();
+
+        $('#progress')
+            .progress('increment');
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
